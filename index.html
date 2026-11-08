@@ -926,6 +926,71 @@
           type: "plan"
         },
         {
+          id: "books",
+          label: "参考书籍",
+          title: "参考书籍",
+          description: "精选可公开访问的 AI 教材、在线书和课程参考书，方便按主题查阅。",
+          metaLabel: "参考书籍",
+          itemUnit: "本",
+          groups: [
+            {
+              title: "核心教材",
+              items: [
+                {
+                  title: "Dive into Deep Learning",
+                  description: "李沐等，交互式深度学习教材，包含数学推导、代码实现与在线练习。",
+                  url: "https://d2l.ai/"
+                },
+                {
+                  title: "Deep Learning",
+                  description: "Ian Goodfellow 等，系统介绍深度学习理论与方法的经典教材。",
+                  url: "https://www.deeplearningbook.org/"
+                },
+                {
+                  title: "Mathematics for Machine Learning",
+                  description: "Marc Peter Deisenroth 等，机器学习所需的线性代数、微积分和概率基础。",
+                  url: "https://mml-book.github.io/"
+                },
+                {
+                  title: "Probabilistic Machine Learning",
+                  description: "Kevin P. Murphy，从概率视角理解机器学习模型与推断方法。",
+                  url: "https://probml.github.io/pml-book/book1.html"
+                }
+              ]
+            },
+            {
+              title: "在线专书",
+              items: [
+                {
+                  title: "The Little Book of Deep Learning",
+                  description: "François Fleuret，篇幅精简的深度学习概念手册。",
+                  url: "https://fleuret.org/francois/lbdl.html"
+                },
+                {
+                  title: "Neural Networks and Deep Learning",
+                  description: "Michael Nielsen，从零理解神经网络、反向传播与训练过程。",
+                  url: "https://neuralnetworksanddeeplearning.com/"
+                },
+                {
+                  title: "Speech and Language Processing",
+                  description: "Daniel Jurafsky 与 James H. Martin，自然语言处理与语言模型的常用参考书。",
+                  url: "https://web.stanford.edu/~jurafsky/slp3/"
+                },
+                {
+                  title: "The Elements of Statistical Learning",
+                  description: "Hastie、Tibshirani 与 Friedman，统计学习领域的进阶参考书。",
+                  url: "https://hastie.su.domains/ElemStatLearn/"
+                },
+                {
+                  title: "Python Data Science Handbook",
+                  description: "Jake VanderPlas，NumPy、Pandas 与机器学习工具的实用参考。",
+                  url: "https://jakevdp.github.io/PythonDataScienceHandbook/"
+                }
+              ]
+            }
+          ]
+        },
+        {
           id: "math",
           label: "数学基础",
           title: "数学基础",
@@ -1339,22 +1404,28 @@
         breadcrumbCurrent.textContent = category.label;
         pageTitle.textContent = category.title;
         pageDescription.textContent = category.description;
-        pageMetaLabel.textContent = "内容条目";
-        pageMetaText.textContent = category.groups.reduce(function (total, group) {
+        const categoryItemCount = category.groups.reduce(function (total, group) {
           return total + group.items.length;
-        }, 0) + " 个知识点";
+        }, 0);
+        pageMetaLabel.textContent = category.metaLabel || "内容条目";
+        pageMetaText.textContent = categoryItemCount + " " + (category.itemUnit || "个知识点");
 
         const groupsHtml = category.groups.map(function (group) {
           const itemsHtml = group.items.map(function (item, index) {
+            const rowContent = `
+              <span class="outline-index">${String(index + 1).padStart(2, "0")}</span>
+              <span class="outline-main">
+                <span class="outline-title">${escapeHtml(item.title)}</span>
+                <span class="outline-description">${escapeHtml(item.description)}</span>
+              </span>
+              <span class="outline-meta">${item.url ? '访问 <i data-lucide="external-link" class="icon"></i>' : ""}</span>`;
+
+            const row = item.url
+              ? `<a class="outline-row is-link" href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer">${rowContent}</a>`
+              : `<div class="outline-row">${rowContent}</div>`;
+
             return `<li>
-              <div class="outline-row">
-                <span class="outline-index">${String(index + 1).padStart(2, "0")}</span>
-                <span class="outline-main">
-                  <span class="outline-title">${escapeHtml(item.title)}</span>
-                  <span class="outline-description">${escapeHtml(item.description)}</span>
-                </span>
-                <span class="outline-meta"></span>
-              </div>
+              ${row}
             </li>`;
           }).join("");
 
