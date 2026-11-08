@@ -1,1 +1,1553 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>完整课程目录 · Python Coach</title><link rel="icon" href="../assets/python.svg"><link rel="stylesheet" href="../daily-reader.css"><link rel="stylesheet" href="../course.css"><script src="../assets/lucide.min.js" defer></script><script src="../daily-reader.js" defer></script><script src="../course-reader.js" defer></script></head><body><a class="skip-link" href="#lesson">跳到正文</a><header><div class="reader-top"><a class="reader-brand" href="index.html"><img src="../assets/python.svg" alt="Python"><span>Python Coach · 系统讲义</span></a><nav class="reader-actions" aria-label="课程导航"><a href="index.html">课程目录</a><a href="prereq.html">预备章</a><a href="glossary.html">中英术语</a><a href="sources.html">资源地图</a><a href="../daily/index.html">每日课堂</a><a href="../?week=1#roadmap">学习计划</a><a href="../downloads/daily-lessons.zip" download>课程离线包</a></nav></div></header><main class="reader-directory" id="lesson"><div class="eyebrow">预备章 + 24 主章 · 120 每日单元 · 四个项目</div><section class="reader-note" lang="zh-CN"><strong>你的新版路线：已有 Python、初步微积分与概率基础</strong><p>按每天 60 分钟、每周 5 天安排 28 周；线性代数与向量求导先桥接，SVM 选修，三周用于补缺。W 表示原课程章节，P 表示新版学习周。</p><a href="/course/adapted.html">查看个人路线、起点自测与本周任务</a> · <a href="/course/math-bridge.html">数学桥接讲义</a></section><h1>从 Python 到可解释、可复现的机器学习</h1><p>网站计划与操作为中文，讲义正文为英文；首次出现的术语附中文标注，术语释义可在词表中检索。主线将数据实现、统计判断、数学推导和实验连接起来。</p><div class="reader-actions"><a href="prereq.html">先做预备章</a><a href="sources.html">教材如何互补</a><a href="../downloads/integrated-course.md" download>下载整套英文讲义</a></div><p>每周顺序：理解与推导 → 手算预测 → 编程实现 → 受控实验 → 闭卷复述与验收。240 分钟是基础任务预算；整章补读、原书实验和进阶路线可延长，不因周次到期跳过缺口。</p><section class="directory-week"><h2>科学计算 · W1–3</h2><p>Python 表达、数组形状、矩阵、表格和图</p><p><strong>进入下一阶段：</strong>用小例子解释广播与矩阵乘法；交付可重跑的数据分析笔记。</p><ol class="course-chapter-list"><li><a href="w01.html"><strong>W01 · 数组、形状与广播</strong><span lang="en">Arrays as a Language for Data</span></a><p>w01-arrays.ipynb：3 个小函数、形状断言和手算对照。</p><a href="../daily/index.html#w01">五个每日学习单元</a></li><li><a href="w02.html"><strong>W02 · 矩阵与线性方程</strong><span lang="en">Linear Systems, Geometry, and Numerical Trust</span></a><p>w02-linear-algebra.ipynb：乘法对照、方程残差与形状检查。</p><a href="../daily/index.html#w02">五个每日学习单元</a></li><li><a href="w03.html"><strong>W03 · 表格数据与可解释图表</strong><span lang="en">From Tables to Defensible Observations</span></a><p>w03-data-audit.ipynb：数据字典、两张图及三条有依据的观察。</p><a href="../daily/index.html#w03">五个每日学习单元</a></li></ol></section><section class="directory-week"><h2>经典机器学习 · W4–9</h2><p>基线、损失、梯度、回归、分类和评估</p><p><strong>进入下一阶段：</strong>NumPy 线性回归通过梯度检查，与库模型用同一划分对照；解释误差。</p><ol class="course-chapter-list"><li><a href="w04.html"><strong>W04 · 学习问题、基线与数据划分</strong><span lang="en">Learning Problems and Honest Baselines</span></a><p>p1-baseline.ipynb：数据划分说明、均值基线与指标表。</p><a href="../daily/index.html#w04">五个每日学习单元</a></li><li><a href="w05.html"><strong>W05 · 从零实现线性回归</strong><span lang="en">Linear Regression: Geometry Meets Probability</span></a><p>p1-linear.ipynb：目标、梯度推导、数值梯度检查。</p><a href="../daily/index.html#w05">五个每日学习单元</a></li><li><a href="w06.html"><strong>W06 · 梯度下降与回归项目</strong><span lang="en">Gradient Descent and the First Research Report</span></a><p>项目一：回归报告、损失曲线、基线与库模型对照表。</p><a href="../daily/index.html#w06">五个每日学习单元</a></li><li><a href="w07.html"><strong>W07 · 逻辑回归与稳定计算</strong><span lang="en">Classification: Scores, Probabilities, and Decisions</span></a><p>w07-logistic.ipynb：稳定损失、梯度检查与分类结果。</p><a href="../daily/index.html#w07">五个每日学习单元</a></li><li><a href="w08.html"><strong>W08 · 正则化与模型容量</strong><span lang="en">Regularization as a Choice About Complexity</span></a><p>w08-regularization.ipynb：系数、验证误差与选择理由。</p><a href="../daily/index.html#w08">五个每日学习单元</a></li><li><a href="w09.html"><strong>W09 · 评估、交叉验证与阶段复测</strong><span lang="en">Evaluation, Resampling, and Selection Bias</span></a><p>阶段报告：回归与分类指标、数据流程图和待补缺口。</p><a href="../daily/index.html#w09">五个每日学习单元</a></li></ol></section><section class="directory-week"><h2>模型与无监督学习 · W10–13</h2><p>树与集成、间隔、PCA、K-means</p><p><strong>进入下一阶段：</strong>独立实现 PCA 与 K-means，解释重建误差及初始化影响。</p><ol class="course-chapter-list"><li><a href="w10.html"><strong>W10 · 决策树与随机森林</strong><span lang="en">Trees and Ensembles: Local Rules, Shared Evidence</span></a><p>w10-trees.ipynb：一层手算划分、深度对照与误差说明。</p><a href="../daily/index.html#w10">五个每日学习单元</a></li><li><a href="w11.html"><strong>W11 · SVM 与分类间隔</strong><span lang="en">Margins, Kernels, and the Meaning of C</span></a><p>w11-margin.ipynb：间隔示意、两组实验与适用条件。</p><a href="../daily/index.html#w11">五个每日学习单元</a></li><li><a href="w12.html"><strong>W12 · PCA、投影与重建</strong><span lang="en">PCA: Variance, Projection, and Reconstruction</span></a><p>p2-pca.ipynb：方差、投影图和重建误差。</p><a href="../daily/index.html#w12">五个每日学习单元</a></li><li><a href="w13.html"><strong>W13 · K-means 与无监督项目</strong><span lang="en">K-means and the Limits of Unsupervised Structure</span></a><p>项目二：PCA + K-means 笔记，初始化对照与局限。</p><a href="../daily/index.html#w13">五个每日学习单元</a></li></ol></section><section class="directory-week"><h2>深度学习 · W14–20</h2><p>两层网络、链式法则、Autograd、CNN 与泛化</p><p><strong>进入下一阶段：</strong>手写两层网络的梯度检查通过，与 PyTorch 同结构对照，完成数字识别实验。</p><ol class="course-chapter-list"><li><a href="w14.html"><strong>W14 · 神经元与非线性</strong><span lang="en">Why Nonlinearity Changes What a Network Can Express</span></a><p>w14-neuron.ipynb：小例子、前向结果与形状断言。</p><a href="../daily/index.html#w14">五个每日学习单元</a></li><li><a href="w15.html"><strong>W15 · 两层网络与前向传播</strong><span lang="en">Forward Propagation and Stable Multiclass Loss</span></a><p>p3-forward.ipynb：两层前向、稳定损失与手算对照。</p><a href="../daily/index.html#w15">五个每日学习单元</a></li><li><a href="w16.html"><strong>W16 · 反向传播与梯度检查</strong><span lang="en">Backpropagation: Local Derivatives and Shared Paths</span></a><p>p3-backward.ipynb：推导、梯度相对误差与修正记录。</p><a href="../daily/index.html#w16">五个每日学习单元</a></li><li><a href="w17.html"><strong>W17 · PyTorch 与手写网络对照</strong><span lang="en">Autograd and a Trustworthy Training Loop</span></a><p>p3-torch.ipynb：同结构对照、训练循环与保存加载。</p><a href="../daily/index.html#w17">五个每日学习单元</a></li><li><a href="w18.html"><strong>W18 · CNN 与数字识别</strong><span lang="en">Convolution: Locality, Sharing, and Image Experiments</span></a><p>项目三初稿：数字识别、基线、错误图与配置。</p><a href="../daily/index.html#w18">五个每日学习单元</a></li><li><a href="w19.html"><strong>W19 · 优化器与可重复实验</strong><span lang="en">Optimization: Momentum, Adam, and Fair Comparisons</span></a><p>w19-optimizers：配置、曲线与有限预算下的结论。</p><a href="../daily/index.html#w19">五个每日学习单元</a></li><li><a href="w20.html"><strong>W20 · 泛化与数字项目复盘</strong><span lang="en">Generalization: Dropout, Batch Normalization, and Mode</span></a><p>项目三终稿：NumPy 与框架对照、数字识别结果和局限。</p><a href="../daily/index.html#w20">五个每日学习单元</a></li></ol></section><section class="directory-week"><h2>独立 AI 实验 · W21–24</h2><p>问题、基线、受控实验、误差分析和报告</p><p><strong>进入下一阶段：</strong>从干净环境重跑，保留固定测试集、配置和局限，完成一份可审阅报告。</p><ol class="course-chapter-list"><li><a href="w21.html"><strong>W21 · 定义独立实验与数据协议</strong><span lang="en">Designing a Question That an Experiment Can Answer</span></a><p>项目四 proposal：问题、数据、划分、指标、预算和基线。</p><a href="../daily/index.html#w21">五个每日学习单元</a></li><li><a href="w22.html"><strong>W22 · 建立可重跑基线</strong><span lang="en">Implementation, Aggregation, and Reproduction</span></a><p>项目四 baseline：配置、模型、曲线与基线结果。</p><a href="../daily/index.html#w22">五个每日学习单元</a></li><li><a href="w23.html"><strong>W23 · 受控对照与误差分析</strong><span lang="en">Error Analysis and Claims Proportional to Evidence</span></a><p>项目四 experiment：对照表、错误图和假设检验记录。</p><a href="../daily/index.html#w23">五个每日学习单元</a></li><li><a href="w24.html"><strong>W24 · 封存结果、报告与答辩</strong><span lang="en">A Report You Can Defend and a Route Beyond It</span></a><p>项目四最终报告 + 代码：问题、数据、方法、实验、误差、局限、下一步。</p><a href="../daily/index.html#w24">五个每日学习单元</a></li></ol></section><p>本路线完整覆盖其列明的能力门槛；不是所有参考书的逐页替代。未纳入必修的主题在资源地图中有具体前置要求和产出。</p></main></body></html>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lukas 的 AI 学习目录，包含学习计划、数学基础、机器学习、大语言模型与 AI 伦理等知识模块。">
+  <meta name="theme-color" content="#ffffff">
+  <title>AI 学习笔记</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%231f2328'/%3E%3Cpath d='M18 24l14-7 14 7-14 7-14-7zm0 9l14 7 14-7v8l-14 7-14-7v-8z' fill='%23fff'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      --text: #1f2328;
+      --text-soft: #59636e;
+      --text-muted: #7d8590;
+      --line: #d8dee4;
+      --line-dark: #afb8c1;
+      --surface: #ffffff;
+      --surface-soft: #f6f8fa;
+      --surface-hover: #f3f4f6;
+      --selected: #24292f;
+      --focus: rgba(9, 105, 218, 0.25);
+      --font-sans: "Inter", "Noto Sans SC", "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
+      --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--surface);
+      color: var(--text);
+      font-family: var(--font-sans);
+      font-size: 15px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    button,
+    input {
+      font: inherit;
+    }
+
+    button,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      color: inherit;
+      cursor: pointer;
+    }
+
+    svg {
+      display: block;
+    }
+
+    ::selection {
+      background: #c8d9ea;
+    }
+
+    :focus-visible {
+      outline: 2px solid #0969da;
+      outline-offset: 2px;
+    }
+
+    .icon {
+      width: 20px;
+      height: 20px;
+      flex: none;
+      stroke-width: 1.8;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.97);
+      backdrop-filter: blur(10px);
+    }
+
+    .header-top {
+      width: min(1360px, calc(100% - 48px));
+      min-height: 72px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      flex: none;
+      font-size: 22px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      white-space: nowrap;
+    }
+
+    .brand-mark {
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      color: var(--text);
+    }
+
+    .brand-mark .icon {
+      width: 30px;
+      height: 30px;
+      stroke-width: 1.9;
+    }
+
+    .header-controls {
+      position: relative;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 8px;
+    }
+
+    .icon-button {
+      width: 38px;
+      height: 38px;
+      display: inline-grid;
+      place-items: center;
+      flex: none;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      background: transparent;
+      color: var(--text-soft);
+      transition: background 140ms ease, color 140ms ease, border-color 140ms ease;
+    }
+
+    .icon-button:hover {
+      border-color: var(--line);
+      background: var(--surface-hover);
+      color: var(--text);
+    }
+
+    .search-box {
+      position: relative;
+      width: min(360px, 34vw);
+      margin: 0 8px;
+    }
+
+    .search-box .icon {
+      position: absolute;
+      top: 50%;
+      left: 14px;
+      width: 21px;
+      height: 21px;
+      color: var(--text-soft);
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+
+    .search-box input {
+      width: 100%;
+      height: 42px;
+      padding: 0 14px 0 45px;
+      border: 1px solid transparent;
+      border-radius: 3px;
+      background: #eef1f4;
+      color: var(--text);
+      font-size: 15px;
+      outline: none;
+      transition: border-color 140ms ease, background 140ms ease, box-shadow 140ms ease;
+    }
+
+    .search-box input::placeholder {
+      color: #6f7781;
+    }
+
+    .search-box input:focus {
+      border-color: var(--line-dark);
+      background: var(--surface);
+      box-shadow: 0 0 0 3px var(--focus);
+    }
+
+    .github-link {
+      height: 40px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 0 10px;
+      border-radius: 4px;
+      color: var(--text);
+      font-size: 14px;
+      white-space: nowrap;
+      transition: background 140ms ease;
+    }
+
+    .github-link:hover {
+      background: var(--surface-hover);
+    }
+
+    .github-link .icon {
+      width: 27px;
+      height: 27px;
+      stroke-width: 1.7;
+    }
+
+    .menu-panel {
+      position: absolute;
+      top: 48px;
+      right: 80px;
+      width: 260px;
+      display: none;
+      padding: 8px;
+      border: 1px solid var(--line);
+      border-radius: 5px;
+      background: var(--surface);
+      box-shadow: 0 12px 32px rgba(31, 35, 40, 0.12);
+    }
+
+    .menu-panel.is-open {
+      display: block;
+    }
+
+    .menu-panel-label {
+      padding: 8px 10px 6px;
+      color: var(--text-muted);
+      font-size: 11px;
+      font-weight: 600;
+    }
+
+    .menu-panel a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 8px 10px;
+      border-radius: 3px;
+      color: var(--text-soft);
+      font-size: 14px;
+    }
+
+    .menu-panel a:hover,
+    .menu-panel a.is-active {
+      background: var(--surface-hover);
+      color: var(--text);
+    }
+
+    .menu-panel a span {
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+      font-size: 10px;
+    }
+
+    .category-nav-wrap {
+      width: min(1360px, calc(100% - 48px));
+      margin: 0 auto;
+    }
+
+    .category-nav {
+      display: flex;
+      align-items: stretch;
+      gap: 34px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+
+    .category-nav::-webkit-scrollbar {
+      display: none;
+    }
+
+    .category-link {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      flex: none;
+      padding: 14px 0 15px;
+      color: #4c5259;
+      font-size: 14px;
+      white-space: nowrap;
+    }
+
+    .category-link:hover {
+      color: var(--text);
+    }
+
+    .category-link.is-active {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .category-link.is-active::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: -1px;
+      left: 0;
+      height: 2px;
+      background: var(--selected);
+    }
+
+    main {
+      width: min(1120px, calc(100% - 48px));
+      margin: 0 auto;
+      padding: 48px 0 88px;
+    }
+
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      margin-bottom: 18px;
+      color: var(--text-muted);
+      font-size: 12px;
+    }
+
+    .breadcrumb a:hover {
+      color: var(--text);
+    }
+
+    .page-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 40px;
+      padding-bottom: 34px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .page-head-main {
+      max-width: 760px;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      margin-bottom: 12px;
+      font-size: 38px;
+      line-height: 1.25;
+      font-weight: 650;
+      letter-spacing: -0.035em;
+    }
+
+    .page-description {
+      margin-bottom: 0;
+      color: var(--text-soft);
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    .page-meta {
+      flex: none;
+      padding-top: 7px;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+      font-size: 10px;
+      line-height: 1.7;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .page-meta strong {
+      display: block;
+      color: var(--text-soft);
+      font-family: var(--font-sans);
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    .plan-progress {
+      margin-top: 26px;
+      padding: 18px 0 4px;
+    }
+
+    .progress-copy {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 10px;
+      color: var(--text-soft);
+      font-size: 12px;
+    }
+
+    .progress-copy strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .progress-track {
+      height: 3px;
+      overflow: hidden;
+      background: #e5e9ed;
+    }
+
+    .progress-track span {
+      display: block;
+      width: 0;
+      height: 100%;
+      background: var(--selected);
+      transition: width 180ms ease;
+    }
+
+    .content-section {
+      margin-top: 36px;
+    }
+
+    .section-heading {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 8px;
+    }
+
+    .section-heading h2 {
+      margin-bottom: 0;
+      font-size: 16px;
+      font-weight: 650;
+      letter-spacing: -0.01em;
+    }
+
+    .section-heading span {
+      color: var(--text-muted);
+      font-size: 11px;
+    }
+
+    .outline-list {
+      margin: 0;
+      padding: 0;
+      border-top: 1px solid var(--line);
+      list-style: none;
+    }
+
+    .outline-row {
+      display: grid;
+      grid-template-columns: 42px minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 14px;
+      min-height: 68px;
+      padding: 12px 8px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .outline-row.is-link {
+      transition: background 140ms ease;
+    }
+
+    .outline-row.is-link:hover {
+      background: var(--surface-soft);
+    }
+
+    .outline-index {
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+      font-size: 11px;
+    }
+
+    .outline-main {
+      min-width: 0;
+    }
+
+    .outline-title {
+      display: block;
+      margin-bottom: 2px;
+      color: var(--text);
+      font-size: 15px;
+      font-weight: 520;
+      line-height: 1.5;
+    }
+
+    .outline-description {
+      display: block;
+      overflow: hidden;
+      color: var(--text-muted);
+      font-size: 12px;
+      line-height: 1.6;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .outline-meta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--text-muted);
+      font-size: 11px;
+      white-space: nowrap;
+    }
+
+    .outline-meta .icon {
+      width: 15px;
+      height: 15px;
+      opacity: 0.7;
+    }
+
+    .plan-row {
+      grid-template-columns: 22px 20px minmax(0, 1fr) auto;
+      cursor: pointer;
+    }
+
+    .plan-row input {
+      width: 16px;
+      height: 16px;
+      margin: 0;
+      accent-color: var(--selected);
+      cursor: pointer;
+    }
+
+    .plan-row .outline-index {
+      text-align: left;
+    }
+
+    .plan-row.is-complete .outline-title {
+      color: var(--text-muted);
+      text-decoration: line-through;
+      text-decoration-thickness: 1px;
+    }
+
+    .plan-row.is-complete .outline-description {
+      opacity: 0.7;
+    }
+
+    .stage-row {
+      grid-template-columns: 42px minmax(0, 1fr) auto;
+    }
+
+    .stage-row .outline-title {
+      font-weight: 600;
+    }
+
+    .search-summary {
+      margin: 28px 0 0;
+      color: var(--text-soft);
+      font-size: 13px;
+    }
+
+    .search-result-category {
+      display: inline-block;
+      margin-right: 8px;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+      font-size: 10px;
+      font-weight: 500;
+    }
+
+    .search-result-row {
+      width: 100%;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 20px;
+      min-height: 64px;
+      padding: 10px 8px;
+      border: 0;
+      border-bottom: 1px solid var(--line);
+      background: transparent;
+      text-align: left;
+      transition: background 140ms ease;
+    }
+
+    .search-result-row:hover {
+      background: var(--surface-soft);
+    }
+
+    .search-result-row .icon {
+      width: 15px;
+      height: 15px;
+      color: var(--text-muted);
+    }
+
+    .empty-state {
+      padding: 52px 0;
+      border-bottom: 1px solid var(--line);
+      color: var(--text-muted);
+      text-align: center;
+    }
+
+    .empty-state strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--text-soft);
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    .highlight-row {
+      animation: highlight 1.6s ease;
+    }
+
+    @keyframes highlight {
+      0%,
+      35% {
+        background: #fff8c5;
+      }
+      100% {
+        background: transparent;
+      }
+    }
+
+    .site-footer {
+      border-top: 1px solid var(--line);
+      background: var(--surface-soft);
+    }
+
+    .footer-inner {
+      width: min(1120px, calc(100% - 48px));
+      min-height: 64px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      color: var(--text-muted);
+      font-size: 11px;
+    }
+
+    .footer-inner a:hover {
+      color: var(--text);
+      text-decoration: underline;
+    }
+
+    .footer-links {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+
+    noscript {
+      display: block;
+      margin: 24px auto;
+      padding: 12px 16px;
+      border: 1px solid #d4a72c;
+      background: #fff8c5;
+      color: #4d2d00;
+    }
+
+    @media (max-width: 900px) {
+      .header-top {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto auto;
+        gap: 8px 10px;
+        padding: 12px 0;
+      }
+
+      .header-controls {
+        display: contents;
+      }
+
+      .search-box {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        width: 100%;
+        margin: 0;
+      }
+
+      .header-controls > .icon-button {
+        grid-column: 2;
+        grid-row: 1;
+      }
+
+      .github-link {
+        grid-column: 3;
+        grid-row: 1;
+      }
+
+      .menu-panel {
+        top: calc(100% + 8px);
+        right: 24px;
+      }
+
+      .category-nav {
+        gap: 26px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .header-top,
+      .category-nav-wrap,
+      main,
+      .footer-inner {
+        width: min(100% - 32px, 1120px);
+      }
+
+      .header-top {
+        padding: 10px 0 12px;
+      }
+
+      .brand {
+        gap: 9px;
+        font-size: 18px;
+      }
+
+      .brand-mark {
+        width: 29px;
+        height: 29px;
+      }
+
+      .brand-mark .icon {
+        width: 26px;
+        height: 26px;
+      }
+
+      .github-link {
+        width: 38px;
+        padding: 0;
+        justify-content: center;
+      }
+
+      .github-link span {
+        display: none;
+      }
+
+      .github-link .icon {
+        width: 24px;
+        height: 24px;
+      }
+
+      .menu-panel {
+        top: calc(100% + 8px);
+        right: 16px;
+        left: 16px;
+        width: auto;
+        max-height: calc(100vh - 120px);
+        overflow-y: auto;
+      }
+
+      .category-nav {
+        gap: 24px;
+      }
+
+      .category-link {
+        padding-top: 11px;
+        padding-bottom: 12px;
+        font-size: 13px;
+      }
+
+      main {
+        padding: 32px 0 64px;
+      }
+
+      .breadcrumb {
+        margin-bottom: 13px;
+      }
+
+      .page-head {
+        flex-direction: column;
+        gap: 14px;
+        padding-bottom: 26px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .page-description {
+        font-size: 14px;
+      }
+
+      .page-meta {
+        display: flex;
+        gap: 10px;
+        padding-top: 0;
+        text-align: left;
+        white-space: normal;
+      }
+
+      .page-meta strong {
+        display: inline;
+      }
+
+      .content-section {
+        margin-top: 30px;
+      }
+
+      .outline-row {
+        grid-template-columns: 28px minmax(0, 1fr) auto;
+        gap: 10px;
+        min-height: 66px;
+        padding-right: 2px;
+        padding-left: 2px;
+      }
+
+      .plan-row {
+        grid-template-columns: 20px 24px minmax(0, 1fr);
+      }
+
+      .plan-row .outline-meta {
+        grid-column: 3;
+        justify-self: start;
+        margin-top: -8px;
+        font-size: 10px;
+      }
+
+      .outline-description {
+        white-space: normal;
+      }
+
+      .outline-meta {
+        font-size: 10px;
+      }
+
+      .outline-meta .icon {
+        display: none;
+      }
+
+      .footer-inner {
+        min-height: 78px;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        padding: 14px 0;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-top">
+      <a class="brand" href="#plan" aria-label="AI 学习笔记首页">
+        <span class="brand-mark" aria-hidden="true"><i data-lucide="library-big" class="icon"></i></span>
+        <span>AI 学习笔记</span>
+      </a>
+
+      <div class="header-controls">
+        <button class="icon-button" id="menuButton" type="button" aria-label="打开目录菜单" aria-expanded="false" aria-controls="menuPanel">
+          <i data-lucide="menu" class="icon"></i>
+        </button>
+
+        <label class="search-box" for="searchInput">
+          <i data-lucide="search" class="icon" aria-hidden="true"></i>
+          <input id="searchInput" type="search" placeholder="搜索知识点" autocomplete="off" aria-label="搜索知识点">
+        </label>
+
+        <a class="github-link" href="https://github.com/lukas-moran/ai_learning" target="_blank" rel="noreferrer" aria-label="在 GitHub 查看项目">
+          <i data-lucide="github" class="icon"></i>
+          <span>lukas-moran/ai_learning</span>
+        </a>
+
+        <div class="menu-panel" id="menuPanel">
+          <div class="menu-panel-label">知识目录</div>
+          <div id="menuPanelLinks"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="category-nav-wrap">
+      <nav class="category-nav" id="categoryNav" aria-label="知识分类"></nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="breadcrumb" id="breadcrumb">
+      <a href="#plan">首页</a>
+      <span>/</span>
+      <span id="breadcrumbCurrent">计划</span>
+    </div>
+
+    <div class="page-head">
+      <div class="page-head-main">
+        <h1 id="pageTitle">学习计划</h1>
+        <p class="page-description" id="pageDescription">按阶段整理学习目标，逐项完成基础、模型理解与应用实践。</p>
+      </div>
+      <div class="page-meta">
+        <strong id="pageMetaLabel">学习进度</strong>
+        <span id="pageMetaText">0 / 4 已完成</span>
+      </div>
+    </div>
+
+    <div id="content"></div>
+    <noscript>这个目录需要启用 JavaScript 才能切换分类和搜索知识点。</noscript>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>AI 学习笔记 · 个人知识目录</span>
+      <div class="footer-links">
+        <a href="https://github.com/lukas-moran/ai_learning" target="_blank" rel="noreferrer">GitHub</a>
+        <span id="footerYear">2026</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+  <script>
+    (function () {
+      "use strict";
+
+      const categories = [
+        {
+          id: "plan",
+          label: "计划",
+          title: "学习计划",
+          description: "按阶段整理学习目标，逐项完成基础、模型理解与应用实践。",
+          type: "plan"
+        },
+        {
+          id: "math",
+          label: "数学基础",
+          title: "数学基础",
+          description: "理解机器学习与深度学习所需的线性代数、概率、微积分和信息论基础。",
+          groups: [
+            {
+              title: "核心概念",
+              items: [
+                { title: "向量、矩阵与线性变换", description: "矩阵乘法、秩、特征值与奇异值分解的直觉。" },
+                { title: "概率论与统计基础", description: "随机变量、常见分布、期望、方差与最大似然。" },
+                { title: "微积分与梯度", description: "偏导数、链式法则、雅可比矩阵与梯度下降。" },
+                { title: "信息论基础", description: "熵、交叉熵、KL 散度与最大熵原理。" }
+              ]
+            },
+            {
+              title: "实践补充",
+              items: [
+                { title: "数值稳定性", description: "Softmax、对数求和与溢出问题的处理方法。" },
+                { title: "常用矩阵分解", description: "SVD、PCA 与低秩近似在模型中的应用。" }
+              ]
+            }
+          ]
+        },
+        {
+          id: "python",
+          label: "Python 工程",
+          title: "Python 工程",
+          description: "记录 Python、NumPy、PyTorch 与实验管理相关的工程实践。",
+          groups: [
+            {
+              title: "工具链",
+              items: [
+                { title: "Python 环境与包管理", description: "虚拟环境、依赖锁定和项目目录组织。" },
+                { title: "NumPy 张量操作", description: "广播、索引、矩阵运算与向量化思维。" },
+                { title: "PyTorch 基础", description: "Tensor、Autograd、Module 与优化器。" },
+                { title: "数据加载与训练循环", description: "Dataset、DataLoader 和标准训练流程。" }
+              ]
+            },
+            {
+              title: "实验管理",
+              items: [
+                { title: "实验记录与可视化", description: "记录配置、指标、随机种子和失败尝试。" },
+                { title: "模型检查与调试", description: "张量形状、梯度状态和显存占用的排查。" }
+              ]
+            }
+          ]
+        },
+        {
+          id: "ml",
+          label: "机器学习",
+          title: "机器学习",
+          description: "从监督学习的基本假设出发，理解模型、损失函数和评估方法。",
+          groups: [
+            {
+              title: "基础模型",
+              items: [
+                { title: "监督学习与损失函数", description: "经验风险、最大似然和常见损失函数。" },
+                { title: "线性回归与逻辑回归", description: "从最小二乘到交叉熵分类。" },
+                { title: "正则化与泛化", description: "L1、L2、偏差方差与数据规模的影响。" },
+                { title: "决策树与集成方法", description: "Bagging、Boosting 与随机森林。" }
+              ]
+            },
+            {
+              title: "评估与调优",
+              items: [
+                { title: "模型评估与交叉验证", description: "训练集、验证集、测试集和常见评估指标。" },
+                { title: "特征工程与数据泄漏", description: "怎样构造有效特征，以及怎样避免评估失真。" }
+              ]
+            }
+          ]
+        },
+        {
+          id: "dl",
+          label: "深度学习",
+          title: "深度学习",
+          description: "整理神经网络、优化方法和主流网络结构的学习笔记。",
+          groups: [
+            {
+              title: "核心机制",
+              items: [
+                { title: "神经网络与反向传播", description: "计算图、链式法则和参数更新过程。" },
+                { title: "优化器与学习率调度", description: "SGD、Adam、权重衰减和学习率策略。" },
+                { title: "归一化与初始化", description: "BatchNorm、LayerNorm 与参数初始化。" },
+                { title: "过拟合与正则化", description: "Dropout、数据增强、早停和正则项。" }
+              ]
+            },
+            {
+              title: "网络结构",
+              items: [
+                { title: "CNN 与感受野", description: "卷积、池化、特征图和层级表示。" },
+                { title: "RNN 与序列建模", description: "循环结构、梯度问题和长程依赖。" },
+                { title: "注意力与 Transformer", description: "Q、K、V、多头注意力和位置编码。" }
+              ]
+            }
+          ]
+        },
+        {
+          id: "llm",
+          label: "大语言模型",
+          title: "大语言模型",
+          description: "从分词、预训练到指令微调，建立语言模型的完整知识框架。",
+          groups: [
+            {
+              title: "模型基础",
+              items: [
+                { title: "分词与词表", description: "BPE、WordPiece 与 SentencePiece 的差异。" },
+                { title: "Transformer 架构", description: "编码器、解码器、残差连接和归一化。" },
+                { title: "预训练目标", description: "自回归建模、掩码语言建模与下一词预测。" },
+                { title: "位置编码", description: "绝对位置编码、相对位置编码与 RoPE。" }
+              ]
+            },
+            {
+              title: "训练与推理",
+              items: [
+                { title: "指令微调", description: "监督微调的数据组织和训练目标。" },
+                { title: "解码策略", description: "贪心搜索、束搜索、温度采样与 Top-p。" },
+                { title: "上下文窗口", description: "长上下文的外推、压缩和注意力成本。" }
+              ]
+            }
+          ]
+        },
+        {
+          id: "prompt",
+          label: "提示工程",
+          title: "提示工程",
+          description: "把提示词当作模型接口来设计、测试和评估，而不是依赖零散技巧。",
+          groups: [
+            {
+              title: "基础方法",
+              items: [
+                { title: "提示的结构", description: "角色、任务、上下文、约束和输出格式。" },
+                { title: "Few-shot 示例", description: "示例选择、覆盖范围和顺序对结果的影响。" },
+                { title: "结构化输出", description: "JSON、表格和可解析响应格式的设计。" },
+                { title: "提示词评估", description: "建立样例集，比较不同提示模板的稳定性。" }
+              ]
+            },
+            {
+              title: "常见问题",
+              items: [
+                { title: "指令冲突", description: "多层约束相互矛盾时怎样确定优先级。" },
+                { title: "上下文污染", description: "无关信息、错误示例和长上下文造成的干扰。" }
+              ]
+            }
+          ]
+        },
+        {
+          id: "rag",
+          label: "RAG",
+          title: "检索增强生成",
+          description: "记录检索、切分、嵌入、重排与生成评估的实现方法。",
+          groups: [
+            {
+              title: "检索流程",
+              items: [
+                { title: "文档切分策略", description: "固定长度、语义切分和重叠窗口。" },
+                { title: "Embedding 与向量检索", description: "相似度计算、索引结构和召回策略。" },
+                { title: "重排序", description: "Cross-encoder、规则排序与多路召回融合。" },
+                { title: "上下文组织", description: "引用、去重、压缩和上下文窗口分配。" }
+              ]
+            },
+            {
+              title: "系统评估",
+              items: [
+                { title: "检索评估", description: "Recall、Precision、MRR 与人工相关性判断。" },
+                { title: "生成评估", description: "忠实度、相关性和答案覆盖率。" },
+                { title: "RAG 失败分析", description: "区分检索失败、上下文失败和生成失败。" }
+              ]
+            }
+          ]
+        },
+        {
+          id: "vision",
+          label: "计算机视觉",
+          title: "计算机视觉",
+          description: "从图像表示到检测、分割和视觉 Transformer 的知识目录。",
+          groups: [
+            {
+              title: "基础任务",
+              items: [
+                { title: "图像表示与预处理", description: "像素、颜色空间、归一化和数据增强。" },
+                { title: "CNN 与特征提取", description: "卷积核、感受野和特征层级。" },
+                { title: "图像分类", description: "经典骨干网络与分类评估指标。" },
+                { title: "目标检测", description: "边界框、IoU、单阶段与两阶段方法。" },
+                { title: "语义分割", description: "像素分类、上采样和分割损失。" }
+              ]
+            },
+            {
+              title: "视觉模型",
+              items: [
+                { title: "Vision Transformer", description: "Patch Embedding、位置编码和注意力。" },
+                { title: "对比学习", description: "数据增强、正负样本和表征学习。" }
+              ]
+            }
+          ]
+        },
+        {
+          id: "multimodal",
+          label: "多模态",
+          title: "多模态模型",
+          description: "理解图像、文本和音频等不同模态如何被编码、对齐与融合。",
+          groups: [
+            {
+              title: "模型方法",
+              items: [
+                { title: "CLIP 与图文对齐", description: "双塔结构、对比损失与零样本分类。" },
+                { title: "视觉语言模型", description: "视觉编码器、连接器和语言模型。" },
+                { title: "多模态融合", description: "早期融合、晚期融合和跨模态注意力。" }
+              ]
+            },
+            {
+              title: "评估与实践",
+              items: [
+                { title: "多模态评估", description: "视觉理解、文字识别和跨模态推理。" },
+                { title: "数据与对齐问题", description: "图文噪声、模态缺失和提示偏差。" }
+              ]
+            }
+          ]
+        },
+        {
+          id: "ethics",
+          label: "AI 伦理",
+          title: "AI 伦理与安全",
+          description: "关注模型行为、公平性、隐私、版权和对齐问题。",
+          groups: [
+            {
+              title: "伦理议题",
+              items: [
+                { title: "数据与算法偏见", description: "偏见的来源、测量方法和缓解手段。" },
+                { title: "隐私与数据保护", description: "训练数据、记忆化和推理泄露。" },
+                { title: "版权与内容来源", description: "训练数据、生成内容和引用规范。" },
+                { title: "模型对齐", description: "意图、目标与模型实际行为之间的差距。" }
+              ]
+            },
+            {
+              title: "安全评估",
+              items: [
+                { title: "红队测试", description: "主动寻找模型在真实场景中的失败方式。" },
+                { title: "部署风险", description: "权限、监控、人工复核和事故响应。" }
+              ]
+            }
+          ]
+        }
+      ];
+
+      const planGroups = [
+        {
+          title: "本周计划",
+          items: [
+            { id: "transformer", title: "完成 Transformer 注意力机制推导", description: "从矩阵形状出发，手写一遍 Q、K、V 的计算过程。", time: "60 分钟" },
+            { id: "tokenizer", title: "用 Python 手写最小 tokenizer", description: "不调用现成库，完成字符切分、词表构建和编码。", time: "90 分钟" },
+            { id: "rag", title: "复现一个最小 RAG 检索流程", description: "从文档切分、Embedding 到上下文拼装完整走通。", time: "120 分钟" },
+            { id: "eval", title: "整理 RAG 系统评估指标", description: "区分检索、上下文和生成三个层面的评估。", time: "45 分钟" }
+          ]
+        },
+        {
+          title: "学习阶段",
+          items: [
+            { index: "01", title: "基础准备", description: "数学基础与 Python 工程工具", target: "math" },
+            { index: "02", title: "模型理解", description: "机器学习与深度学习核心机制", target: "ml" },
+            { index: "03", title: "应用实践", description: "大语言模型、提示工程与 RAG", target: "llm" },
+            { index: "04", title: "扩展方向", description: "计算机视觉、多模态与 AI 伦理", target: "vision" }
+          ]
+        }
+      ];
+
+      const categoryNav = document.getElementById("categoryNav");
+      const menuPanelLinks = document.getElementById("menuPanelLinks");
+      const menuButton = document.getElementById("menuButton");
+      const menuPanel = document.getElementById("menuPanel");
+      const searchInput = document.getElementById("searchInput");
+      const content = document.getElementById("content");
+      const breadcrumbCurrent = document.getElementById("breadcrumbCurrent");
+      const pageTitle = document.getElementById("pageTitle");
+      const pageDescription = document.getElementById("pageDescription");
+      const pageMetaLabel = document.getElementById("pageMetaLabel");
+      const pageMetaText = document.getElementById("pageMetaText");
+      const planStorageKey = "ai-learning-plan-progress";
+      let activeCategory = "plan";
+      let lastQuery = "";
+
+      function renderIcons() {
+        if (window.lucide && typeof window.lucide.createIcons === "function") {
+          window.lucide.createIcons({ icons: window.lucide.icons });
+        }
+      }
+
+      function escapeHtml(value) {
+        return String(value)
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;")
+          .replace(/'/g, "&#039;");
+      }
+
+      function getCategory(id) {
+        return categories.find(function (category) { return category.id === id; }) || categories[0];
+      }
+
+      function getPlanProgress() {
+        try {
+          const saved = JSON.parse(localStorage.getItem(planStorageKey) || "{}");
+          return saved && typeof saved === "object" ? saved : {};
+        } catch (error) {
+          return {};
+        }
+      }
+
+      function savePlanProgress(progress) {
+        localStorage.setItem(planStorageKey, JSON.stringify(progress));
+      }
+
+      function buildNavigation() {
+        categoryNav.innerHTML = categories.map(function (category) {
+          return `<a class="category-link" href="#${category.id}" data-category="${category.id}">${escapeHtml(category.label)}</a>`;
+        }).join("");
+
+        menuPanelLinks.innerHTML = categories.map(function (category, index) {
+          return `<a href="#${category.id}" data-menu-category="${category.id}">
+            <span>${escapeHtml(category.label)}</span>
+            <span>${String(index).padStart(2, "0")}</span>
+          </a>`;
+        }).join("");
+      }
+
+      function updateActiveNavigation() {
+        document.querySelectorAll("[data-category]").forEach(function (link) {
+          link.classList.toggle("is-active", link.dataset.category === activeCategory);
+        });
+        document.querySelectorAll("[data-menu-category]").forEach(function (link) {
+          link.classList.toggle("is-active", link.dataset.menuCategory === activeCategory);
+        });
+      }
+
+      function renderPlan() {
+        const progress = getPlanProgress();
+        const total = planGroups[0].items.length;
+        const completed = planGroups[0].items.filter(function (item) { return Boolean(progress[item.id]); }).length;
+        const percentage = total ? Math.round((completed / total) * 100) : 0;
+
+        pageTitle.textContent = "学习计划";
+        pageDescription.textContent = "按阶段整理学习目标，逐项完成基础、模型理解与应用实践。";
+        pageMetaLabel.textContent = "学习进度";
+        pageMetaText.textContent = completed + " / " + total + " 已完成";
+
+        const planList = planGroups[0].items.map(function (item, index) {
+          const isComplete = Boolean(progress[item.id]);
+          return `<li>
+            <label class="outline-row plan-row${isComplete ? " is-complete" : ""}">
+              <input type="checkbox" data-plan-id="${escapeHtml(item.id)}"${isComplete ? " checked" : ""}>
+              <span class="outline-index">${String(index + 1).padStart(2, "0")}</span>
+              <span class="outline-main">
+                <span class="outline-title">${escapeHtml(item.title)}</span>
+                <span class="outline-description">${escapeHtml(item.description)}</span>
+              </span>
+              <span class="outline-meta">${escapeHtml(item.time)}</span>
+            </label>
+          </li>`;
+        }).join("");
+
+        const stages = planGroups[1].items.map(function (item) {
+          return `<li>
+            <a class="outline-row stage-row is-link" href="#${escapeHtml(item.target)}" data-open-category="${escapeHtml(item.target)}">
+              <span class="outline-index">${escapeHtml(item.index)}</span>
+              <span class="outline-main">
+                <span class="outline-title">${escapeHtml(item.title)}</span>
+                <span class="outline-description">${escapeHtml(item.description)}</span>
+              </span>
+              <span class="outline-meta"><i data-lucide="arrow-right" class="icon"></i></span>
+            </a>
+          </li>`;
+        }).join("");
+
+        content.innerHTML = `
+          <div class="plan-progress">
+            <div class="progress-copy">
+              <span>当前进度</span>
+              <strong>${percentage}%</strong>
+            </div>
+            <div class="progress-track" aria-hidden="true"><span style="width: ${percentage}%"></span></div>
+          </div>
+          <section class="content-section">
+            <div class="section-heading">
+              <h2>${escapeHtml(planGroups[0].title)}</h2>
+              <span>${completed} / ${total} 已完成</span>
+            </div>
+            <ul class="outline-list">${planList}</ul>
+          </section>
+          <section class="content-section">
+            <div class="section-heading">
+              <h2>${escapeHtml(planGroups[1].title)}</h2>
+              <span>4 个阶段</span>
+            </div>
+            <ul class="outline-list">${stages}</ul>
+          </section>`;
+
+        content.querySelectorAll(".plan-row input").forEach(function (checkbox) {
+          checkbox.addEventListener("change", function () {
+            const currentProgress = getPlanProgress();
+            currentProgress[checkbox.dataset.planId] = checkbox.checked;
+            savePlanProgress(currentProgress);
+            renderPlan();
+            renderIcons();
+          });
+        });
+      }
+
+      function renderCategory(category) {
+        activeCategory = category.id;
+        updateActiveNavigation();
+        breadcrumbCurrent.textContent = category.label;
+        pageTitle.textContent = category.title;
+        pageDescription.textContent = category.description;
+        pageMetaLabel.textContent = "内容条目";
+        pageMetaText.textContent = category.groups.reduce(function (total, group) {
+          return total + group.items.length;
+        }, 0) + " 个知识点";
+
+        const groupsHtml = category.groups.map(function (group) {
+          const itemsHtml = group.items.map(function (item, index) {
+            return `<li>
+              <div class="outline-row">
+                <span class="outline-index">${String(index + 1).padStart(2, "0")}</span>
+                <span class="outline-main">
+                  <span class="outline-title">${escapeHtml(item.title)}</span>
+                  <span class="outline-description">${escapeHtml(item.description)}</span>
+                </span>
+                <span class="outline-meta"></span>
+              </div>
+            </li>`;
+          }).join("");
+
+          return `<section class="content-section">
+            <div class="section-heading">
+              <h2>${escapeHtml(group.title)}</h2>
+              <span>${group.items.length} 项</span>
+            </div>
+            <ul class="outline-list">${itemsHtml}</ul>
+          </section>`;
+        }).join("");
+
+        content.innerHTML = groupsHtml;
+      }
+
+      function renderCategoryFromHash() {
+        if (searchInput.value.trim()) return;
+        const id = window.location.hash.replace(/^#/, "") || "plan";
+        const category = getCategory(id);
+        if (category.type === "plan") {
+          activeCategory = "plan";
+          updateActiveNavigation();
+          breadcrumbCurrent.textContent = "计划";
+          renderPlan();
+        } else {
+          renderCategory(category);
+        }
+        renderIcons();
+        window.scrollTo({ top: 0, behavior: "auto" });
+      }
+
+      function flattenItems() {
+        const results = [];
+        categories.forEach(function (category) {
+          if (!category.groups) return;
+          category.groups.forEach(function (group) {
+            group.items.forEach(function (item) {
+              results.push({
+                categoryId: category.id,
+                categoryLabel: category.label,
+                groupTitle: group.title,
+                item: item
+              });
+            });
+          });
+        });
+        return results;
+      }
+
+      function renderSearch(query) {
+        const normalized = query.trim().toLowerCase();
+        lastQuery = normalized;
+        breadcrumbCurrent.textContent = "搜索";
+        pageTitle.textContent = "搜索";
+        pageMetaLabel.textContent = "搜索关键词";
+        pageMetaText.textContent = query.trim();
+
+        if (!normalized) {
+          renderCategoryFromHash();
+          return;
+        }
+
+        document.querySelectorAll("[data-category]").forEach(function (link) {
+          link.classList.remove("is-active");
+        });
+
+        const results = flattenItems().filter(function (result) {
+          return [result.item.title, result.item.description, result.categoryLabel, result.groupTitle]
+            .join(" ")
+            .toLowerCase()
+            .includes(normalized);
+        });
+
+        pageDescription.textContent = results.length
+          ? "在所有知识分类中找到以下内容。"
+          : "没有找到相关内容，请尝试更短的关键词。";
+        pageMetaText.textContent = results.length + " 项结果";
+
+        if (!results.length) {
+          content.innerHTML = `<div class="empty-state"><strong>没有匹配的知识点</strong><span>试试搜索“Transformer”“RAG”或“数学”。</span></div>`;
+          renderIcons();
+          return;
+        }
+
+        const rows = results.map(function (result) {
+          return `<button class="search-result-row" type="button" data-result-category="${result.categoryId}" data-result-title="${escapeHtml(result.item.title)}">
+            <span class="outline-main">
+              <span class="outline-title"><span class="search-result-category">${escapeHtml(result.categoryLabel)}</span>${escapeHtml(result.item.title)}</span>
+              <span class="outline-description">${escapeHtml(result.item.description)}</span>
+            </span>
+            <i data-lucide="arrow-right" class="icon"></i>
+          </button>`;
+        }).join("");
+
+        content.innerHTML = `<section class="content-section">
+          <div class="section-heading"><h2>搜索结果</h2><span>${results.length} 项</span></div>
+          <div>${rows}</div>
+        </section>`;
+
+        content.querySelectorAll("[data-result-category]").forEach(function (button) {
+          button.addEventListener("click", function () {
+            const categoryId = button.dataset.resultCategory;
+            const targetTitle = button.dataset.resultTitle;
+            searchInput.value = "";
+            lastQuery = "";
+            window.location.hash = categoryId;
+            window.setTimeout(function () {
+              const targetRow = Array.from(document.querySelectorAll(".outline-row")).find(function (row) {
+                const title = row.querySelector(".outline-title");
+                return title && title.textContent.trim() === targetTitle;
+              });
+              if (targetRow) {
+                targetRow.classList.add("highlight-row");
+                targetRow.scrollIntoView({ behavior: "smooth", block: "center" });
+              }
+            }, 80);
+          });
+        });
+        renderIcons();
+      }
+
+      function closeMenu() {
+        menuPanel.classList.remove("is-open");
+        menuButton.setAttribute("aria-expanded", "false");
+        menuButton.setAttribute("aria-label", "打开目录菜单");
+      }
+
+      menuButton.addEventListener("click", function () {
+        const isOpen = menuPanel.classList.toggle("is-open");
+        menuButton.setAttribute("aria-expanded", String(isOpen));
+        menuButton.setAttribute("aria-label", isOpen ? "关闭目录菜单" : "打开目录菜单");
+      });
+
+      document.addEventListener("click", function (event) {
+        if (!menuPanel.contains(event.target) && !menuButton.contains(event.target)) {
+          closeMenu();
+        }
+      });
+
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+          if (menuPanel.classList.contains("is-open")) {
+            closeMenu();
+            menuButton.focus();
+          } else if (searchInput.value) {
+            searchInput.value = "";
+            renderCategoryFromHash();
+          }
+        }
+        if (event.key === "/" && document.activeElement !== searchInput) {
+          event.preventDefault();
+          searchInput.focus();
+        }
+      });
+
+      searchInput.addEventListener("input", function () {
+        const query = searchInput.value;
+        if (query.trim()) {
+          renderSearch(query);
+        } else {
+          renderCategoryFromHash();
+        }
+      });
+
+      menuPanelLinks.addEventListener("click", function (event) {
+        const link = event.target.closest("[data-menu-category]");
+        if (!link) return;
+        closeMenu();
+        searchInput.value = "";
+      });
+
+      categoryNav.addEventListener("click", function () {
+        searchInput.value = "";
+        closeMenu();
+      });
+
+      content.addEventListener("click", function (event) {
+        const link = event.target.closest("[data-open-category]");
+        if (!link) return;
+        searchInput.value = "";
+      });
+
+      window.addEventListener("hashchange", function () {
+        if (!searchInput.value.trim()) {
+          renderCategoryFromHash();
+        }
+      });
+
+      buildNavigation();
+      document.getElementById("footerYear").textContent = String(new Date().getFullYear());
+      renderIcons();
+      renderCategoryFromHash();
+    })();
+  </script>
+</body>
+</html>
